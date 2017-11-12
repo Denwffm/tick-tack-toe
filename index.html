@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tick-Tack-Toe</title>
+    <link rel="icon" href="./img/Tic_tac_toe.svg.png">
+    <link rel="stylesheet" type="text/css" href="./google-ads/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="body area">
+<div class="row">
+    <div class="col s12">
+        <h1 class="black-text h1 wow fadeInLeft">Hello!</h1>
+        <h1 class="black-text h2 wow fadeInRight">Still have nothing to do?</h1>
+        <h1 class="black-text h3 wow fadeInLeft">Play with me!</h1>
+        <div class="center">
+            <a id="beforePlayButton" class="btn-large red modal-trigger wow bounceInUp" href="#modal-ad">Play</a>
+        </div>
+    </div>
+    <!-- Modal Structure -->
+    <!-- Play ad video -->
+    <div id="modal-ad" class="modal">
+        <div class="modal-content">
+            <h4>Ads</h4>
+            <div class="row">
+                <div class="col s12">
+                    <div class="md">
+                        <div id="mainContainer">
+                            <div id="content">
+                                <video id="contentElement">
+                                    <!-- Add here content to play after default sample-->
+                                </video>
+                            </div>
+                            <div id="adContainer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+<script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+<script type="text/javascript" src="./google-ads/ads.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+    $(document).ready(function () {
+        $('.modal').modal({
+            dismissible: false
+        });
+    });
+</script>
+</body>
+</html>

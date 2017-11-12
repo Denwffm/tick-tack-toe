@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tick-Tack-Toe</title>
+    <link rel="icon" href="./img/Tic_tac_toe.svg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body class="area">
+<div class="row">
+    <div class="col s12">
+        <div id="ttt">
+            <div class="case line_1"></div>
+            <div class="case line_1"></div>
+            <div class="case line_1"></div>
+            <div class="case line_2"></div>
+            <div class="case line_2"></div>
+            <div class="case line_2"></div>
+            <div class="case line_3"></div>
+            <div class="case line_3"></div>
+            <div class="case line_3"></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Play Again -->
+<div id="modal-play-again" class="modal">
+    <div class="modal-content">
+        <h4 id="win-info"></h4>
+        <div class="center">
+            <a class="btn-large red " href="game.html">Play Again</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+<script src="js/code.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.modal').modal({
+            dismissible: false
+        });
+    });
+</script>
+</body>
+</html>
